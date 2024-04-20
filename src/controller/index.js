@@ -1,0 +1,9 @@
+module.exports={
+    authController:require('./auth.controller'),
+     loundryServiceController:require('./laundryService.controller'),
+     orderController:require('./order.controller'),
+     paymentController:require('./payment.controller'),
+     addressController:require('./address.controller'),
+     clothesCategoryController:require("./clothesCategoryController"),
+     clothesItemController:require("./cloathItem.controller")
+}
