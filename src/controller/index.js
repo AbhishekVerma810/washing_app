@@ -5,5 +5,6 @@ module.exports={
      paymentController:require('./payment.controller'),
      addressController:require('./address.controller'),
      clothesCategoryController:require("./clothesCategoryController"),
-     clothesItemController:require("./cloathItem.controller")
+     clothesItemController:require("./cloathItem.controller"),
+     CartController:require("./cart.controller")
 }

@@ -7,7 +7,6 @@ const chat=require('./routes/route')
 const crypto = require('crypto');
 const jwtSecret = crypto.randomBytes(32).toString('hex');
 console.log('chata',jwtSecret)
-
 require('dotenv').config();
 app.use(cors());
 app.use(cookieParser());

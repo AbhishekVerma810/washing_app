@@ -58,7 +58,7 @@ exports.signup = async (req, res, next) => {
         return res.status(401).json({ error: 'Invalid email or password' });
       }
       const token = jwt.sign({ userId: user.id }, process.env.JWT_SECRET, { expiresIn: '1h' });
-      return res.status(200).json({ message: 'User logged in successfully', token });
+      return res.status(200).json({ message: 'User logged in successfully', user});
     } catch (err) {
       return res.status(500).json({ error: 'Internal Server Error' });
     }

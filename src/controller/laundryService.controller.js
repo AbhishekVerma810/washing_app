@@ -35,6 +35,14 @@ exports.getLaundryServices = async (req, res, next) => {
     next(err);
   }
 };
+exports.getServicesWithId = async (req, res, next) => {
+  try {
+    const services = await LaundryService.findOne({where:{id:req.params}});
+    res.status(200).json(services);
+  } catch (err) {
+    next(err);
+  }
+};
 
 // Update a LaundryService
 exports.updateLaundryService = async (req, res, next) => {
